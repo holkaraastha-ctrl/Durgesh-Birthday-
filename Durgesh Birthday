@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Durgesh 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 30px;
+      color: #2c2c2c;
+    }
+    h1 {
+      font-size: 36px;
+      color: #6a1b4d;
+      margin-bottom: 5px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      margin: 25px auto;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .question {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    button {
+      background: #d16ba5;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 8px;
+    }
+    button:hover {
+      background: #b24c8a;
+    }
+    #reply {
+      font-size: 18px;
+      color: #b24c8a;
+      margin-top: 15px;
+      min-height: 24px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>For You, Durgesh 💕</h1>
+<p class="subtitle">A few gentle questions… and a lot of love</p>
+
+<div class="card">
+  <div class="question">Do you know how calm my world feels when you’re in it?</div>
+  <button onclick="respond('You are my quiet comfort 🤍')">Yes</button>
+  <button onclick="respond('Then let me tell you… you are my peace 🤍')">No</button>
+</div>
+
+<div class="card">
+  <div class="question">Do you realize how effortlessly you make me smile?</div>
+  <button onclick="respond('Your presence feels like home 🌙')">Yes</button>
+  <button onclick="respond('You make my days softer, just by being you 🌸')">No</button>
+</div>
+
+<div class="card">
+  <div class="question">Do you know how deeply I admire the person you are?</div>
+  <button onclick="respond('I see your kindness, always 💖')">Yes</button>
+  <button onclick="respond('There is so much beauty in your heart 💫')">No</button>
+</div>
+
+<div class="card">
+  <div class="question">Do you feel how loved you truly are?</div>
+  <button onclick="respond('You are loved in the quietest, deepest way ❤️')">Yes</button>
+  <button onclick="respond('Let me love you gently, every day ❤️')">No</button>
+</div>
+
+<div class="card">
+  <div class="question">One last thing… do you know what today is?</div>
+  <button onclick="finalMessage()">Tell me 💝</button>
+</div>
+
+<p id="reply"></p>
+
+<script>
+function respond(text) {
+  document.getElementById("reply").innerHTML = text;
+}
+
+function finalMessage() {
+  document.body.innerHTML = `
+    <h1>Happy Birthday, Durgesh 🎂</h1>
+    <p style="font-size:20px; max-width:600px; margin:20px auto;">
+      Today is a quiet celebration of you.<br><br>
+      Of your smile, your warmth, and the way you make everything feel a little more gentle.<br><br>
+      I’m grateful for you — for who you are, and for how you love.<br><br>
+      I hope this year brings you calm happiness, steady dreams, and moments that feel like home.<br><br>
+      With all my heart 🤍
+    </p>
+    <button onclick="location.reload()">Read Again 🌷</button>
+  `;
+}
+</script>
+
+</body>
+</html>
